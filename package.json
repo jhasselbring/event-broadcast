@@ -1,0 +1,19 @@
+{
+  "name": "event-broadcast",
+  "version": "1.0.0",
+  "description": "",
+  "main": "event-broadcast",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhasselbring/event-broadcast.git"
+  },
+  "author": "Jan Hasselbring",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhasselbring/event-broadcast/issues"
+  },
+  "homepage": "https://github.com/jhasselbring/event-broadcast#readme"
+}
