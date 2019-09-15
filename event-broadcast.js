@@ -1,3 +1,8 @@
+if(typeof window == 'undefined'){
+    var WebSocket = require('ws'),
+        os = require('os');
+}
+
 (function (root, factory) {
     if(typeof exports === 'object' && typeof module === 'object')
         module.exports = factory();
@@ -11,8 +16,9 @@
     return (function () {
         var domain = 'localhost';
         if(typeof window != 'undefined'){
-            var WebSocket = require('ws');
             domain = window.location.hostname.replace(/\W/g, '-')
+        }else{
+            domain = os.hostname();
         }
         return {
             domain: domain,
@@ -38,9 +44,38 @@
             },
             on:function (name, cb) {
                 if (typeof cb === 'function') {
-                    this.callbacks[name] = cb;
+                    if(name === 'onclose' || name === 'close'){
+                        this.connection.onclose = cb;
+                        return true;
+                    }
+                    else if(name === 'onerror' || name === 'error'){
+                        this.connection.onerror = cb;
+                        return true;
+                    }
+                    else if(name === 'onmessage'){
+                        console.error(name + ' is a reserved event');
+                        return false;
+                    }
+                    else if(name === 'onopen' || name === 'open' || name === 'connect' || name === 'onconnect'){
+                        this.connection.onopen = cb;
+                        return true;
+                    }
+                    else{
+                        this.callbacks[name] = cb;
+                        return true;
+                    }
                 }else{
-                    console.error('Callback needs to be a function')
+                    console.error('Callback needs to be a function');
+                    return false;
+                }
+            },
+            setDomain:function (domain) {
+                var regex = RegExp('/[A-Za-z0-9\-_]{2,20}/');
+                if(regex.test(domain)){
+                    console.error('Domain contains characters that are not allowed  Must be alphanumeric, -, _ and between 2 and 20 characters long');
+                }else{
+                    this.domain = domain;
+                    return true;
                 }
             }
         }
