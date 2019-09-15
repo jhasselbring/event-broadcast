@@ -11,6 +11,7 @@
     return (function () {
         var domain = 'localhost';
         if(typeof window != 'undefined'){
+            var WebSocket = require('ws');
             domain = window.location.hostname.replace(/\W/g, '-')
         }
         return {

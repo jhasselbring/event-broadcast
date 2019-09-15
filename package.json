@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/jhasselbring/event-broadcast/issues"
   },
-  "homepage": "https://github.com/jhasselbring/event-broadcast#readme"
+  "homepage": "https://github.com/jhasselbring/event-broadcast#readme",
+  "dependencies": {
+    "ws": "^7.1.2"
+  }
 }
