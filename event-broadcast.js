@@ -9,14 +9,18 @@
         root["ca$t"] = factory();
 })(this, function () {
     return (function () {
+        var domain = 'localhost';
+        if(typeof window != 'undefined'){
+            domain = window.location.hostname.replace(/\W/g, '-')
+        }
         return {
-            chan: 'localhost',
-            room:'_',
+            domain: domain,
+            channel:'_',
             callbacks:[],
             connect: function (server = null) {
                 var self = this;
                 if(server === null) server = "ws://connect.websocket.in/";
-                this.connection = new WebSocket(server + this.chan + '?room_id=' + this.room);
+                this.connection = new WebSocket(server + this.domain + '?room_id=' + this.channel);
                 this.connection.onmessage = function(e) {
                     e = JSON.parse(e.data);
                     try{
