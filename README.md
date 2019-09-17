@@ -1,8 +1,8 @@
 # event-broadcast: Simple WebSocket library
 
-## Why another WebSocket library?  See for your self:
+### Why another WebSocket library?  See for your self:
 
-### get started in a few lines of codes -
+* ### Get started in a few lines of codes:
 #### Client side:
 ````html
 <script src="https://unpkg.com/event-broadcast@latest"></script>
@@ -35,3 +35,6 @@ ca$t.on('connected', function (e) {
     console.log(e.message)
 });
 ````
+
+* ### No server needed to get started
+  (..  crickets ...)

@@ -2,7 +2,6 @@ if(typeof window == 'undefined'){
     var WebSocket = require('ws'),
         os = require('os');
 }
-
 (function (root, factory) {
     if(typeof exports === 'object' && typeof module === 'object')
         module.exports = factory();
@@ -29,11 +28,36 @@ if(typeof window == 'undefined'){
                 if(server === null) server = "ws://connect.websocket.in/";
                 this.connection = new WebSocket(server + this.domain + '?room_id=' + this.channel);
                 this.connection.onmessage = function(e) {
-                    e = JSON.parse(e.data);
+                    var data = JSON.parse(e.data);
+                    var event = {
+                        event: data.event,
+                        payload: data.payload,
+                        bubbles: e.bubbles,
+                        cancelBubble: e.cancelBubble,
+                        cancelable: e.cancelable,
+                        composed: e.composed,
+                        currentTarget: e.currentTarget,
+                        defaultPrevented: e.defaultPrevented,
+                        eventPhase: e.eventPhase,
+                        isTrusted: e.isTrusted,
+                        lastEventId: e.lastEventId,
+                        origin: e.origin,
+                        path: e.path,
+                        ports: e.ports,
+                        returnValue: e.returnValue,
+                        source: e.source,
+                        srcElement: e.srcElement,
+                        target: e.target,
+                        timeStamp: e.timeStamp,
+                        type: e.type,
+                        userActivation: e.userActivation
+                    };
                     try{
-                        self.callbacks[e.event](e.payload);
+                        self.callbacks[event.event](event);
                     }
-                    catch(err){}
+                    catch(err){
+                        console.error(err);
+                    }
                 };
             },
             emit: function (event, payload = null) {
