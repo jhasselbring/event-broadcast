@@ -1,13 +1,13 @@
 # event-broadcast: A dumified WebSocket wrapper
 
 ## Why did we build event-broadcast?
-* ### Our goal is to make the barrier to entry websockets and real time applications lower. 
+* #### Our goal is to make the learning curve to create websockets and real time applications lower. 
 
 ## why use event-broadcast?
-* ### Multi platform: browsers, apps, servers - Anywhere JavaScript can run that allows WebSockets
-* ### No server needed to get started.
-* ### Free (Paid tier possible in the future)
-* ### Get started in a few lines of code:  Seriously, copy the following code and put it in the `<body>` of you html then open your html multiple times and see them communicate with each other immediately.
+* #### Multi platform: browsers, apps, servers - Anywhere JavaScript can run that allows WebSockets
+* #### No server needed to get started.
+* #### Free (Paid tier possible in the future)
+* #### Get started in a few lines of code:  Seriously, copy the following code and put it in the `<body>` of you html then open your html multiple times and see them communicate with each other immediately.
 
 #### Client side:
 ````html
