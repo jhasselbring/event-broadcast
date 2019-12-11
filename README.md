@@ -40,21 +40,21 @@ chat.on('open', function () {
 ````
 # API Docs:
 ### `Ca$t('domain')`:
-        The constructor that initialize the connection. The `domain` parameter is not required.  The library will try to automatically detect your domain or host name.  It is recommended to provide your domain name to make sure your applications (website or servers) are in the same channel and ablet to communicate with each other.
+The constructor that initialize the connection. The `domain` parameter is not required.  The library will try to automatically detect your domain or host name.  It is recommended to provide your domain name to make sure your applications (website or servers) are in the same channel and ablet to communicate with each other.
 ### Parameters:
 #### `domain` : `(String) Not required`
-        The string that will identify your application's channel (Usually your app's domain).  All apps that share the same domain will be in the same channel, this includes webapps, mobile apps and node servers.
+The string that will identify your application's channel (Usually your app's domain).  All apps that share the same domain will be in the same channel, this includes webapps, mobile apps and node servers.
 ````javascript
 let mainChannel = new Ca$t('https://domain.com');
 ````
 ---
 ### `Ca$t.emit('event-name', {payload})`:
-        Creates and fires an event along with a payload if provided.
+Creates and fires an event along with a payload if provided.
 ### Parameters:
 #### `event-name` : `(String) Required`
-        The event identifier that will be emitted/fired.  This must match the event listener.
+The event identifier that will be emitted/fired.  This must match the event listener.
 #### `{payload}` : `(JSON) Not required`
-        The data that will be broadcasted to everyone.
+The data that will be broadcasted to everyone.
 ````javascript
 mainChannel.on('event-name', {someData: 'Hello World!'});
 ````
@@ -63,10 +63,10 @@ mainChannel.on('event-name', {someData: 'Hello World!'});
 #### Parameters:
 
 ##### `event-name` : `(String) Required`
-        The event identifier that the event listener will listen to.  This must match the exact event name.
+The event identifier that the event listener will listen to.  This must match the exact event name.
 
 ##### `callBack(data)` : `(callable function) Required`
-        The function that will be executed once the event is fired.  If the event is fired with a payload, the callback will receive a parameter conatining the data.
+The function that will be executed once the event is fired.  If the event is fired with a payload, the callback will receive a parameter conatining the data.
 ````javascript
 mainChannel.on('event-name', function(data){ console.log(data.payload.someData)});
 ````
