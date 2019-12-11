@@ -123,4 +123,7 @@ if (typeof window == 'undefined') {
             return false;
         }
     };
+    this.close = function(){
+        self.connection.close();
+    }
 });
