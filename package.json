@@ -36,7 +36,11 @@
     "broad-cast",
     "client",
     "browser",
-    "server"
+    "server",
+    "bidirectional",
+    "two-way",
+    "communication",
+    "stream"
   ],
   "devDependencies": {
     "chai": "^4.2.0",
