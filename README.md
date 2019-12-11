@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/jhasselbring/event-broadcast.svg?branch=master)](https://travis-ci.org/jhasselbring/event-broadcast)
 # event-broadcast: A dumified WebSocket wrapper
 
 ## Why did we build event-broadcast?
