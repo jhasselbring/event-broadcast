@@ -1,3 +1,5 @@
+[![NPM](https://nodei.co/npm/event-broadcast.png)](https://nodei.co/npm/event-broadcast/)
+
 [![Build Status](https://travis-ci.org/jhasselbring/event-broadcast.svg?branch=master)](https://travis-ci.org/jhasselbring/event-broadcast)
 [![Known Vulnerabilities](https://snyk.io/test/github/jhasselbring/event-broadcast/badge.svg)](https://snyk.io/test/github/jhasselbring/event-broadcast)
 [![npm version](https://badge.fury.io/js/event-broadcast.svg)](https://badge.fury.io/js/event-broadcast)
