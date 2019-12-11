@@ -18,5 +18,12 @@
   "homepage": "https://github.com/jhasselbring/event-broadcast#readme",
   "dependencies": {
     "ws": "^7.1.2"
-  }
+  },
+  "keywords": [
+    "socket",
+    "websocket",
+    "chat",
+    "serverless",
+    "realtime"
+  ]
 }
