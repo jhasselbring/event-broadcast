@@ -1,3 +1,5 @@
+# event-broadcast: A dumified WebSocket wrapper
+
 [![NPM](https://nodei.co/npm/event-broadcast.png)](https://nodei.co/npm/event-broadcast/)
 
 [![Build Status](https://travis-ci.org/jhasselbring/event-broadcast.svg?branch=master)](https://travis-ci.org/jhasselbring/event-broadcast)
@@ -8,7 +10,6 @@
 | --------- | --------- | --------- | --------- | --------- | --------- | --------- |
 | v10| v11| v16| v7| v6| v4| Not supported
 ---
-# event-broadcast: A dumified WebSocket wrapper
 
 ## Why did we build event-broadcast?
 *  Our goal is to make the learning curve to create websockets and real time applications lower. 
