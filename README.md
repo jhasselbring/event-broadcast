@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/jhasselbring/event-broadcast.svg?branch=master)](https://travis-ci.org/jhasselbring/event-broadcast)
+[![Known Vulnerabilities](https://snyk.io/test/github/jhasselbring/event-broadcast/badge.svg)](https://snyk.io/test/github/jhasselbring/event-broadcast)
 # event-broadcast: A dumified WebSocket wrapper
 
 ## Why did we build event-broadcast?
