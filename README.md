@@ -5,6 +5,8 @@
 [![Build Status](https://travis-ci.org/jhasselbring/event-broadcast.svg?branch=master)](https://travis-ci.org/jhasselbring/event-broadcast)
 [![Known Vulnerabilities](https://snyk.io/test/github/jhasselbring/event-broadcast/badge.svg)](https://snyk.io/test/github/jhasselbring/event-broadcast)
 [![npm version](https://badge.fury.io/js/event-broadcast.svg)](https://badge.fury.io/js/event-broadcast)
+---
+[![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=D48QW7L3UGUK2)
 # Browser support based on [caniuse.com](https://caniuse.com/#search=webSocket)
 | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>IE / Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Safari | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari-ios/safari-ios_48x48.png" alt="iOS Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>iOS Safari | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/samsung-internet/samsung-internet_48x48.png" alt="Samsung" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Samsung | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/opera/opera_48x48.png" alt="Opera" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Opera |
 | --------- | --------- | --------- | --------- | --------- | --------- | --------- |
@@ -91,5 +93,7 @@ mainChannel.on('event-name', function(data){ console.log(data.payload.someData)}
     * Alias:
 * `connect`: Fired on successfull connection.
     * Alias: `open`, `onopen`, `onconnect`
+---
+[![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=D48QW7L3UGUK2)
 
 ###### * Note:  Nothing you do in the internet is private thus use this software with caution.
