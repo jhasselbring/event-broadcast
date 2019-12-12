@@ -1,8 +1,13 @@
 language: node_js
-node_js: 
-  - "stable"
+node_js:
+- stable
 cache: npm
 install:
-  - npm install
+- npm install
 script:
-  - npm run test
+- npm run test
+deploy:
+  provider: npm
+  email: janmykhail.hasselbring@outlook.com
+  api_key:
+    secure: R9/QYQtN20fprFngJZC7qbN4xCdMRUe3OuTjy8F9w84htpI+xn0ykgRPc6n2LF2nSR0kbyZ1NuTHqxpkkdH2/hcL1cd/nXLxHmtmnAjqBVHWFd4r+JibwwTIdpIdX2knUmeAxp5jTIIzptqwQJRoke0hXSNxhuwCcI63gWHRU6ikhdKli1wC6/i6FIY5DzhZgO/iaVQCInOEpuxPSv5i2CGofjlhJuYuPfNVpIDdr8C0CKGYNW7Ilbg+b+qDbUPENaGABHzNBQ+bl4CpvUePaWXn9lFVlQ6xLEy4rVR8+Hk/xM9Islp3a9hKnl0dEdwXVb4WRlBn4c4NPU4sd65KLVi7qiu1aVbWJcRQGD3RUaXia+bbV+RJmqlvDmgUo4lw9F5pr9tuyNTeE6LIG7I5QC0clOIhRbjjnthzHGYfbR/8WfsWq2RwDvNUTq/X6SXNWXiGJtHQiiUEkzu3F11l0alIznQ3hkJKgKgCMzJCoAssX4ynjMYNVdBpB22k/CDotUoGaA6cT6w2BD/+FTFra0njxWd3e+t2IA4/+Poguz/WT2AYL4PLzSuW6QAXpjBtlkYt874hQs1H5c+ARGvGMwjpUEDzIKGYxKJbCsTDbDmBWj4RLa5sT2oABcjMiYRSD2qWanYzz61HxhV4GgX8WTrrrpFrD9/0UsqtH4r9UY8=
